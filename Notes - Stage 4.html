@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Troy's Notes</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="troy-style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+	<div>
+	<h1><img src="http://www.veryicon.com/icon/png/System/Farm%20Fresh/star.png" alt="Oops, does not compute!">Introduction to Programming<img src="http://www.veryicon.com/icon/png/System/Farm%20Fresh/star.png" alt="Oops, does not compute!"></h1>
+	</div>
+	<div class="TOC">
+		<h4>Table of Contents</h4>
+		<ol>
+		    <li><a href="#stage-0"><b>Stage 0: The basics of the Internet</b></a>
+		        <ul>
+		          <li><a href="#stage-0-1">The Internet</a></li>
+		          <li><a href="#stage-0-2">Tags</a></li>
+		          <li><a href="#stage-0-3">Whitespace in HTML</a></li>
+		          <li><a href="#stage-0-4">Inline and Block</a></li>
+		          <li><a href="#stage-0-5">Troy's Thoughts</a></li>
+		        </ul>
+		    </li>
+		    <li><a href="stage-1"><b>Stage 1: Creating a Structured Document with HTML</b></a>	
+		        <ul>
+		          <li><a href="#stage-1-1">Languages of a Webpage</a></li>
+		          <li><a href="#stage-1-2">HTML's "tree-like" Structure</a></li>
+		          <li><a href="#stage-1-3">Speaking of Structure</a></li>
+		          <li><a href="#stage-1-4">Text Editors</a></li>
+		          <li><a href="#stage-1-5">CSS - Adding Style to the Structure</a></li>
+		          <li><a href="#stage-1-6">Troy's Thoughts</a></li>
+		        </ul>
+		    </li>
+		    <li><a href="stage-2"><b>Stage 2: Python</b></a>	
+		        <ul>
+		          <li><a href="#stage-2-1">Programming</a></li>
+		          <li><a href="#stage-2-2">Python</a></li>
+		          <li><a href="#stage-2-3">Python Grammar</a></li>
+		          <li><a href="#stage-2-4">Python Expressions</a></li>
+		          <li><a href="#stage-2-5">Variables</a></li>
+		          <li><a href="#stage-2-6">Strings</a></li>
+		          <li><a href="#stage-2-7">Indexing Strings</a></li>
+		          <li><a href="#stage-2-8">Selecing Sub Sequences</a></li>
+		          <li><a href="#stage-2-9"><b>Find</b>ing Strings in Strings</a></li>
+		          <li><a href="#stage-2-10">Procedures/Functions: Input -> Function -> Output</a></li>
+		          <li><a href="#stage-2-11">Making Decisions</a></li>
+		          <li><a href="#stage-2-12">IF statements</a></li>
+		          <li><a href="#stage-2-13">More Loops: While</a></li>
+		          <li><a href="#stage-2-14">Structured Data: Lists</a></li>
+			      <li><a href="#stage-2-15">List Mutations and Aliasing</a></li>
+			      <li><a href="#stage-2-16">List Operations</a></li>
+			      <li><a href="#stage-2-17">Sructured Data: For Loops</a></li>
+			      <li><a href="#stage-2-18">Problem Solving</a></li>
+		        </ul>
+		    </li>
+		    <li><a href="stage-3"><b>Stage 3: Programming with objects</b></a>
+		    	<ul>
+		    		<li><a href="#stage-3-1">Structured Data: Definitions</a></li>
+        			<li><a href="#stage-3-2">Things to know about Python</a></li>
+        			<li><a href="#stage-3-3">Examples from Stage 3</a></li>
+        			<li><a href="#stage-3-4">Importing</a></li>
+        			<li><a href="#stage-3-5">Bootstrap</a></li>
+        		</ul>
+        	</li>
+			<li><a href="reflinks"><b>Reference Links</b></a></li>
+		<!--<li><a href="refvideos">Reference Videos</a></li>-->
+	    </ol>
+	</div>
+	<div class="lesson">
+	<h2 id="stage-0">Stage 0: The basics of the Internet</h2>
+		<div id="stage-0-1">
+			<h3>The Internet</h3>
+		</div>
+		<div class="info">
+			<p> 
+				The Internet is a collection of computers that talk to each other. The web is a collection of
+		  		HTML docs.  When a user clicks on a link, that link is essentially an address to an HTML file on a server.
+		  		The browser translates that HTML file into a webpage that the user sees.  HTTP is the main protocol of the web.  
+				HTML stands for Hypetext Markup Language.
+			</p>
+		</div>
+		<div id="stage-0-2">
+			<h3>Tags</h3>
+		</div>
+		<div class="info">
+			<p>	
+				Tags are instructions to the computer and are not seen outside of the code <em> (e.g. on the webpage).
+				</em> Elements are the complete tag, so from opening to closing.  These are also the "markup". 
+				Some tags need to be closed, if these types of tags are not closed, then the tag will apply to all text 
+				following the opening of the tag.Other tags do not need to be closed, these are called "Void Tags".  
+				Tags can also have attributes.  These attributes give more dimension to a tag, such as linking a webpage to text.
+			</p>
+		</div>
+		<div id="stage-0-3">
+			<h3>Whitespace in HTML</h3>
+		</div>
+		<div class="info">
+			<p>
+				Whitespace in HTML doesn't translate 1:1 on the webpage.  Spaces seem to be 1:1, but multiple spaces or carrige returns do not.  
+				For example, this is what 10 spaces looks like "          ". 
+			</p>
+		</div>
+		<div id="stage-0-4">
+			<h3>Inline and Block</h3>
+		</div>
+		<div class="info">
+			<p>
+				There are inline and block elements.  Block elements seem to protect their contents by fencing them, like the paragraph element.
+				Block elements are displayed with a line break while inline elements are not. All elements are rendered as boxes, and only some block 
+				elements can be container elements for other block elements. For instance, a &lt;div&gt; can have a &lt;p&gt;, an &lt;ol&gt;, a &lt;ul&gt;,
+				another &lt;div&gt;, but an &lt;ol&gt; or &lt;ul&gt; cannot have a &lt;p&gt; or a &lt;br&gt;.
+			</p>
+		</div>
+		<div id="stage-0-5">
+			<h3>Troy's Thoughts</h3>
+		</div>
+		<div class="info">
+			<ul>
+				<li>	Hey look, I'm already writing in HTML!<br></li>
+	  			<li>	Computers take code literally and want it to be in an exact format.  One sintax mistake and it's not going to do what you thought you told it to do.<br></li>
+	  			<li>	You can't know everything about coding or a particular language; that's why we have <a href="http://www.google.com" target="_blank"> this </a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="lesson">
+	<h2 id="stage-1">Stage 1: Creating a Structured Document with HTML</h2>
+		<div id="stage-1-1">
+			<h3>Languages of a Webpage</h3>
+		</div>
+		<div class="info">
+				Web pages can can be made up of HTML, CSS and Javascript, which are each a language.  A good way to think of these is to think of a house:<br>
+				<ul>
+					<li>HTML is like the walls of a house.  it is essentially the "structure" or building material.</li>
+					<li>CSS is like the decor - what the house looks like.  Think paint on the walls, art, colors used, size and proportion of the furniture.</li>
+					<li>Javascript is like the interactive elements of the house. Think - light switches, doors..</li>
+				</ul>
+		</div>
+		<div id="stage-1-2">
+			<h3>HTML's "tree-like" Structure</h3>
+		</div>
+		<div class="info">
+			<p>
+				This is exactly what it sounds like.  You can essentially draw out a web page as a tree; meaning a "div" can branch into a "header" and a "paragraph".  
+				Each of those branches can branch even further depending on what is nested inside of them.  Elements define what the branches are and these are 
+				nested in other elements.
+			</p>
+		</div>
+		<div id="stage-1-3">
+			<h3>Speaking of Structure</h3>
+		</div>
+		<div class="info">
+			<p>
+				If you look at the HTML code of a web page the structure looks like a wave or zigzags.  This kind of structure helps when reading the code 
+				to see where sections start and end.  While some editors seem to gently create this structure while you are writing the code, it is not a given.
+			</p>
+		</div>
+		<div id="stage-1-4">
+			<h3>Text Editors</h3>
+		</div>
+		<div class="info">	
+				<ol type= "I">
+					<li><a href="http://www.scratchpad.io" target="_blank">Scratchpad.io </a>
+						<ul>
+							<li>Good for Beginners</li>
+							<li>Feedback is immediate</li>
+							<li>No sharing</li>
+							<li>Supports HTML and CSS</li>
+						</ul>
+					</li>
+					<li><a href="http://www.codepen.io" target="_blank">Codepen.io</a>
+						<ul>
+							<li>Intermediate level editor</li>
+							<li>Feedback takes 2-3 seconds</li>
+							<li>Sharing is easy but you need an account</li>
+							<li>Suports HTML,CSS and Javascript</li>
+						</ul>
+					</li>
+					<li>Sublime
+						<ul>
+							<li>Requires some experience and getting use to
+							<li>To see code updates you have to save the file and refresh the page
+							<li>Sharing is possible but more difficult than Codepen
+							<li>Supports alot of languages
+						</ul>
+					</li>
+				</ol>
+		</div>
+		<div id="stage-1-5">
+			<h3>CSS - Adding Style to the Structure</h3>
+		</div>
+		<div class="info">
+			<p>
+				CSS allows you to give your webpage style.  This is a separate file that the browser will read and link to the HTML file.
+				Throughout the code you have many different "blocks", you can assign these blocks classes and use the CSS file to give that class a unique style.  
+				This is helpful because this allows you to set a style easily for different blocks, without having to repeat the style setup each time.
+			</p>
+			<p>
+				There is definately a <em><b>LOT</b></em> more to learn about CSS.  It is clear from the last segment that CSS is a powerful tool 
+				and will take time to learn (most likely from playing and failing) <img src="http://i.imgur.com/uZfdhRl.gif" width="30" height="30" 
+				alt="Oops, does not compute!">
+			</p>
+			<div>
+				Things to note about CSS
+				<ul>
+					<li>CSS = Cascading Stylesheets</li>
+					<li>You can also define your styles in the html file itself by adding &lt;style&gt;&lt;/style&gt; in the head section.</li>
+					<li>If the section in CSS starts with a "." then it is defining a Class.</li>
+					<li>If the selector is a tag without the brackets (i.e. "em" instead of &lt;em&gt;), then it is defining the style of that tag.
+					<li>Things that can be inherited: color, font, letter spacing, line height, list style, text alignment, text indentation, text transform, 
+					visibility, white space and word spacing (probably others?)</li>
+					<li>Things that are not inherited: background, border, display, float and clear, height and width, margin, min/max height & width, 
+					outline, overflow, padding, position, text decoration, vertical alignment and z index (probably others?)</li>
+					<li>"The Box Model" - Margin -> Border -> Padding -> Content</li>
+				</ul>
+			</div>
+				
+				<p>Older browsers don't always like CSS, so add this to the beginning of the CSS file:<br>
+				</p>
+				
+				<div class="codeex">
+					* { <br>
+	   					-webkit-box-sizing: border-box;<br>
+	   					-moz-box-sizing: border-box;<br>
+	   					-ms-box-sizing: border-box;<br>
+	    				box-sizing: border-box;<br>
+					}<br>
+				</div>
+			</div>
+		<div id="stage-1-6">
+			<h3>Troy's Thoughts</h3>
+		</div>
+		<div class="info">
+			<ul>
+				<li>Big Picture - Visualize the "boxes" in the webpage
+				<li>CSS - LOTS TO LEARN
+				<li><span style="color:orange">This is how to span a color</span><span style="color:blue"> or two</span>
+			</ul>
+		</div>
+	</div>
+	<div class="lesson">
+	<h2 id="stage-2">Stage 2: Python</h2>
+
+		<div id="stage-2-1">
+			<h3>Programming</h3>
+		</div>
+		<div class="info">
+			Programs tell computers what to do.  These programs are written in programming languages (like Python), which are special languages 
+			that are clear and precise.  "Natural" languages (like English) would not be great programming languages due to their ambiguity and verbosity. 
+		</div>
+		<div id="stage-2-2">
+			<h3> Python</h3>
+		</div>
+		<div class="info">
+			Python is a programming language which is run in an <em>interpreter</em>.  The <em>interpreter</em> runs the program, interprets them, 
+			then executes the program that was written in python by running the program in a language that the computer can understand.
+		</div>
+		<div id="stage-2-3">
+			<h3> Python Grammar</h3>
+			<div class="info">
+				Grammar is very important since computers are stupid!  While humans can interpret things like "me hungry", computers can't.  
+				So the language that is input as a command must follow specific rules, else what you expected to happen.....won't!
+			</div>
+		</div>
+		<div id="stage-2-4">
+			<h3>Python Expressions</h3>
+			<div class="info">
+				Python uses "expressions" as statements.  <br>
+				<ul>
+					<li>use "#" to make a comment in python</li>
+					<li>"print 1" will give "1"</li>
+					<li>"print 2 * 10" will give "20"</li>
+					<li>in python 5 / 2 = 2, but 5.0 / 2 = 2.5 or 5 / 2.0 = 2.5</li>
+				</ul>
+				Keep in mind that things like "print 2 *" will throw an error!
+			</div>
+		</div>	
+		<div id="stage-2-5">
+			<h3>Variables</h3>
+			<div class="info">
+				<ul>
+					<li>To "assign a variable" is to give a variable a value</li>
+					<li>Variables are assigned this way: "variable = expression"</li>
+					<li>EX: "Troy = 33", where "Troy" is the variable</li>
+				</ul>
+			</div>
+		</div>	
+		<div id="stage-2-6">
+			<h3>Strings</h3>
+			<div class="info">
+				<ul>
+					<li>Strings are a sequence of characters</li>
+					<li>EX: "Hello"</li>
+					<li>You can concatenate strings and Variables: if T = "Troy", Print 'Hello' + T = Hello Troy</li>
+					<li>Print '!' * 3 = !!!</li>
+				</ul>	
+			</div>
+		</div>
+		<div id="stage-2-7">
+			<h3>Indexing Strings</h3>
+			<div class="info">
+				<ul>
+					<li>When indexing strings, you count from left to right, starting with 0</li>
+					<li>SO: 'udacity'[0] --> 'u' | 'udacity'[1+1] --> 'a'</li>
+					<li>you can also use a variable that is a string: so if, name = 'Troy', name[1] -->'r'</li>
+					<li>if your index is greater than the number of letters in your string, you get an error: 'troy'[4] -->error</li>
+					<li>you can use negative numbers too, this will start counting from the end, so if, name = 'troy', name[-2] -->'o'</li>
+				</ul>
+			</div>		
+		</div>
+		<div id="stage-2-8">
+			<h3>Selecing Sub Sequences</h3>
+			<div class="info">
+				<ul>
+					<li>&lt;string&gt;[&lt;expression 1&gt;:&lt;expression 2&gt;], where &lt;expression 1&gt; is the start and &lt;expression 2&gt; is the end</li>
+					<li>EX:word = 'assume'</li>
+					<li>word[4:6] --> me</li>
+					<li>word[3:] --> ume</li>
+					<li>word[:2] --> as </li>
+					<li>word[:] --> assume </li>
+				</ul>	
+			</div>
+		</div>
+		<div id="stage-2-9">
+			<h3><b>Find</b>ing Strings in Strings</h3>
+			<div class="info">
+				<ul>
+					<li>&lt;string1&gt;.find(&lt;string2&gt;), where you are searching &lt;string1&gt; for &lt;string2&gt;</li>
+					<li>Find (aka method) is a built in procedure prvided by python, that operates on stings</li>
+					<li>if the target string is not found you get -1</li>
+					<li>"Test".find("te")--> -1 , due to capitalization</li>
+					<li>"Test".find("Te")--> 0 , because "Te" starts at position 0</li>
+					<li>you can also use variables instead of typing out &lt;string1&gt; or &lt;string2&gt;</li>
+					<li>every string begins with an "empty string" | empty string = ''</li>
+					<li>&lt;string1&gt;.find(&lt;string2&gt;,&lt;number&gt;), this tells find @ what position to start searching, which is useful for finding 
+						&lt;string2&gt; after the first time (or second...) it appears in &lt;string1&gt;</li>
+				</ul>	
+			</div>
+		</div>
+		<div id="stage-2-10">
+			<h3>Procedures/Functions: Input -> Function -> Output</h3>
+			<div class="info">
+				<ul>
+					<li>Procedures or functions are a predefined list of steps that take an input, manipulate the input at each step and then produce an output</li>
+					<li>The <b>benefits</b> of using procedures/functions are:
+						<ul>
+							<li>Reduction of code duplication</li>
+							<li>Decomposing complex problems into simpler pieces</li>
+							<li>Improving code clarity</li>
+							<li>Reuse code</li>
+						</ul>
+					</li>
+					<li>Procedures/functions must be defined using "def"</li>
+					<li>Procedures/functions expect to recieve the same number of inputs they are defined for</li>
+					<li>Procedures/functions need to have the return statement in order to produce an output</li>
+				</ul>	
+			</div>
+			<div class="codeex">
+				<span style="color:green">Example #1</span> - Simple procedure to show structure and basic function<br>
+	   				def add_two_numbers(number_1,Number_2):<br>
+	   			&nbsp;&nbsp;&nbsp;&nbsp; return number_1 + number_2<br>
+	   				<br>
+	    			print add_two_numbers (4,3) => 7<br>
+	   				print add_two_numbers ('hi','troy') => hitroy<br>
+	   				<br>
+			</div>
+
+			<div class="codeex">
+				<span style="color:green">Example #2</span> - Using Prcedures as inputs<br>
+	   				def square(n):<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;return n * n<br>
+	   				<br>
+	    			x = 2<br>
+	   				print square(2) => 4<br>
+	   				print square(square(x)) => 16<br>
+			</div>
+		</div>	
+		<div id="stage-2-11">
+			<h3>Making Decisions</h3>
+			<div class="info">
+			
+					Comparitors:<br>
+				
+						<ul>
+							<li>&lt;	-> less than</li>
+							<li>&gt; 	-> greater than</li>
+							<li>&lt;= 	-> less than or equal to</li>
+							<li>&gt;= 	-> greater than or equal to</li>
+							<li>!= 		-> not equal to</li>
+							<li>== 		-> equal to (NOTE: one equal sign is for assignment of varialbes, two equal signs checks for equality</li>
+							<li>or 		-> or operator.... it means or :)</li>
+							<li>and 	-> and operator.... it means and ;)</li>
+						</ul>
+					
+					Boolean Values are True or False<br>
+				
+						<ul>
+							<li> 2 &lt; 3 => True</li>
+							<li> 21 &lt; 3 => False</li>
+							<li>7 * 3 != 21 => False</li>
+						</ul>		
+			</div>
+		</div>	
+		<div id="stage-2-12">
+			<h3>IF statements</h3>
+			<div class="info">
+				<ul>
+					<li>IF statements will be executed once if the test expression is true</li>
+					<li><span style="color:green">Structure: </span>Notice that there is <u>no "end if"</u>, INDENTATION IS KEY!</li>
+				</ul>	
+				<div class="codeex">
+	   				if &lt;Test Expression&gt;:<br>
+	   			&nbsp;&nbsp;&nbsp;&nbsp; &lt;Block&gt;<br>
+	   				<br>
+	    			&lt;After if Code&gt;
+	   				<br>
+				</div>
+				<ul>
+					<li><span style="color:green">Example 1: </span>Defines a procedure that returns the ABS value of a number by using an if statement. </li>
+				</ul>
+				<div class="codeex">
+					def absolute(x):<br>
+	   				&nbsp;&nbsp;if x &lt; 0:<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp; x = -x<br>
+	   				&nbsp;&nbsp;return x<br>
+	   				<br>
+				</div>
+				<ul>
+					<li><span style="color:green">Example 2: </span>Defines a procedure that returns the bigger of x and y. </li>
+				</ul>
+				<div class="codeex">
+					def bigger(x,y):<br>
+	   				&nbsp;&nbsp;if x &gt; y:<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;return x<br>
+	   				&nbsp;&nbsp;if x == y:<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;return x<br>
+	   				&nbsp;&nbsp;else:<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;return y<br>
+	   				<br>
+				</div>	
+				<ul>
+					<li><span style="color:green">OR: </span>If the first expression evaluates to TRUE, the value is True and the 2nd expression is not evaluated</li>
+				</ul>
+				<div class="codeex">
+					def bigger(x,y):<br>
+	   				&nbsp;&nbsp;if x &gt; y or if x == y:<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;return x<br>
+	   				&nbsp;&nbsp;else:<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;return y<br>
+	   				<br>
+				</div>
+				<ul>
+					<li><span style="color:green">Example 3: </span>Defines a procedure that returns the bigger of a,b and c.</li>
+				</ul>
+				<div class="codeex">
+					def biggest (a,b,c):<br>
+					&nbsp;&nbsp;if a &gt; b:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;if a &gt; c:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return a<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return c<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;if b &gt; c:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return b<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return c<br>
+				</div>						
+				<ul>
+					<li><span style="color:green">Example 4: </span>Defines a procedure that returns the bigger of a,b and c, but uses the "bigger" procedure.</li>
+				</ul>
+				<div class="codeex">
+					def biggest (a,b,c):<br>
+					&nbsp;&nbsp;return bigger(bigger(a,b),c)<br>
+				</div>			
+			</div>
+		</div>	
+		<div id="stage-2-13">
+			<h3>More Loops: While</h3>
+			<div class="info">
+				<ul>
+					<li>While loops will be executed as long as the test expression is true</li>
+					<li><span style="color:green">Structure: </span></li>
+				</ul>	
+				<div class="codeex">
+	   				while &lt;Test Expression&gt;:<br>
+	   			&nbsp;&nbsp;&nbsp;&nbsp; &lt;Block&gt;<br>
+	   				<br>
+	    			&lt;After While Code&gt;
+	   				<br>
+				</div>
+				<ul>
+					<li><span style="color:green">Example 1: </span>Prints #'s 0 - n</li>
+				</ul>	
+				<div class="codeex">
+					def print_numbers(n):<br>
+					&nbsp;&nbsp;i = 0<br>
+	   				&nbsp;&nbsp;while i &lt; n:<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;print i<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;i = i + 1<br>
+	   				&nbsp;&nbsp;return<br>
+	   				<br>
+				</div>
+				<ul>
+					<li><span style="color:green">Example 2: </span>Prints #'s 1 - n, notice the difference in EX. above</li>
+				</ul>	
+				<div class="codeex">
+					def print_numbers(n):<br>
+					&nbsp;&nbsp;i = 0<br>
+	   				&nbsp;&nbsp;while i &lt; n:<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;i = i + 1<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;print i<br>
+	   				&nbsp;&nbsp;return<br>
+	   				<br>
+				</div>	
+				<ul>
+					<li>'break' gives us a way to stop the loop even while the test condition is true</li>
+				</ul>
+				<div class="codeex">
+	   				whlie&lt;TestExpression&gt;:<br>
+	   				&nbsp;&nbsp;if &lt;BreakTest&gt;:<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;break<br>
+	   				&nbsp;&nbsp;&lt;more code&gt;<br>
+	   				&lt;After Whlie Code&gt;<br>
+	   				<br>
+				</div>
+			</div>
+		</div>
+		<div id="stage-2-14">
+		    <h3>Structured Data: Lists</h3>
+		    <div class="info">
+		        A list is a sequence of Anything - characters, strings, numbers...even other lists!<br>
+		        <ul>
+		            <li>Lists take the form: &lt;list&gt; = [&lt;expression&gt;,&lt;expression&gt;,...]</li>
+		            <li>Empty list =&gt; []</li>
+		            <li>Elements of a list start from 0 so: [0,1,2,3...]</li>
+		            <li>When defining a list, especially a long list, you can split the &lt;expression&gt;'s up</li>
+		            <li>You can even index within an indexed list. i.e. list1 = [['Troy','is'],['cool','!']- print list1[1][1] =&gt; will print the 2nd element of the 2nd list in the list, in this case '!'</li>
+		            <li><a href="https://drive.google.com/open?id=0B2DsntQwDC9dZ2dwemtaYjBfTzA" target="_blank"> Examples of Structured Data: Lists</a></li>
+		        </ul>
+		    </div>
+		</div>
+
+		<div id="stage-2-15">
+		    <h3>List Mutations and Aliasing</h3>
+		    <div class="info">
+		        Lists support Mutations and Aliasing.  With mutation you are able to change the value of a list after it has been created.  With Aliasing, you can assign a list to two separate names; however if you mutate the list for one, you mutate it for both. <br>
+		        <ul>
+
+		            <li><a href="https://drive.google.com/open?id=0B2DsntQwDC9dS3dDTXlncnY2MG8" target="_blank"> Examples of List Mutations and Aliasing</a></li>
+		        </ul>
+		    </div>
+		</div>
+
+		<div id="stage-2-16">
+		    <h3>List Operations</h3>
+		    <div class="info">
+		        List operations allow you to perform certain tasks on lists<br>
+		        <ul>
+		            <li>The "append" operation lets you insert another element into an existing list: &lt;list&gt;.append(&lt;element&gt;)</li>
+		            <li>The "plus" operation is like concatination for lists: [1,2] + [3,4] =&gt; [1,2,3,4]
+		Note: The "len" operation outputs the number of elements in a list (this also works on strings): len([0,1]) =&gt; 2</li>
+		            <li><a href="https://drive.google.com/open?id=0B2DsntQwDC9dNm56SDFETVhERjA" target="_blank"> Examples of List Operations</a></li>
+		        </ul>
+		    </div>
+		</div>
+
+		<div id="stage-2-17">
+		    <h3>Sructured Data: For Loops</h3>
+		    <div class="info">
+		        For loops used on lists are similar to using While loops, however they make it easier because it essentially has a built in counter: the length of the list!<br>
+		        <ul>
+		            <li>for &lt;name&gt; in &lt;list&gt;:</li>
+		            <li>&lt;name&gt; is essentially the variable name</li>
+		            <li>For loop on list example:</li>
+		            <li>"Index" is used to find an element within a list.  It takes the form: &lt;list&gt;.index(&lt;value&gt;)</li>
+		            <li>Index always gives the 1st found position</li>
+		            <li>Index will return an error if the value is not found</li>
+		            <li>"in" is used to determine wether or not a value is in a list.  it takes the form: &lt;value&gt; in &lt;list&gt;</li>
+		            <li>if &lt;value&gt; is in the &lt;list&gt;, output is True otherwise, output is false</li>
+		            <li>&lt;value&gt; not in &lt;list&gt; -&gt; is the opposite of "in".</li>
+		            <li><a href="https://drive.google.com/open?id=0B2DsntQwDC9dSUhTVlEwbTVZakE" target="_blank"> Examples of Sructured Data: For Loops</a></li>
+		        </ul>
+		    </div>
+		</div>
+
+		<div id="stage-2-18">
+		    <h3>Problem Solving</h3>
+		    <div class="info">
+		        Problem solving isn't just about understanding the problem, it's also about understanding how to solve it.  Breaking the porblem up into multiple part and tackling the smaller parts one at a time makes it eaiser. Understanding the inputs and outputs is a must, but understanding the relationship between them is KEY!<br>
+		        <ul>
+		            <li>Step 0: Don't Panic</li>
+		            <li>Step 1: What are the inputs (and how are they represented)?</li>
+		            <li>Step 2: What are the outputs?</li>
+		            <li>Step 3: Solve the Problem!</li>
+		            <li>Step 4: Simple Mechanical Solution</li>
+		            <li>Step 5: Develop incrementally and test as you go</li>
+		            <li><button class='btn btn-info' data-popover="true" title= "Problem Slving Ex.: Calculate age in days" data-content= "<embed src='https://docs.google.com/document/d/1o0drwVV-0yQDOTNDaoP_oUph21SZo2s0rqc-u6NIgWA/pub?embedded=true' width='800' height='300'>"><span class="glyphicon glyphicon-eye-open"></span>Problem Slving Ex.: Calculate age in days</button></li>
+		        </ul>
+		    </div>
+		</div>
+	</div>
+	<div class="lesson">
+	<h2 id="stage-3">Stage 3: Programming with objects</h2>
+		<div id="stage-3-1">
+			<div class="info">
+				Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects", which are data structures that contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known as methods. A distinguishing feature of objects is that an object's procedures can access and often modify the data fields of the object with which they are associated (objects have a notion of "this" or "self"). In OO programming, computer programs are designed by making them out of objects that interact with one another. There is significant diversity in object-oriented programming, but most popular languages are class-based, meaning that objects are instances of classes, which typically also determines their type.
+			</div>
+			<h3>Structured Data: Definitions</h3>
+			<div class="info">
+			    <ul>
+			        <li><b><u>Class</u></b> - A neatly packaged box that puts things together really well. A class is like a blueprint of a building - it can be used to build multiple buildings. A user-defined prototype for an object that defines a set of attributes that characterize any object of the class. The attributes are data members (class variables and instance variables) and methods, accessed via dot notation.</li>
+			        <li><b><u>Instance/Object</u></b> - A unique instance of a data structure that's defined by its class. An object comprises both data members (class variables and instance variables) and methods. An individual object of a certain class. An object obj that belongs to a class Circle, for example, is an instance of the class Circle.</li>
+			        <li><b><u>Module</u></b> - A module allows you to logically organize your Python code. Grouping related code into a module makes the code easier to understand and use. A module is a Python object with arbitrarily named attributes that you can bind and reference.  A module is a file consisting of Python code. A module can define functions, classes and variables. A module can also include runnable code.</li>
+			        <li><b><u>Library</u></b> - A library is a collection of implementations of behavior, written in terms of a language, that has a well-defined interface by which the behavior is invoked. This means that as long as a higher level program uses a library to make system calls, it does not need to be re-written to implement those system calls over and over again. In addition, the behavior is provided for reuse by multiple independent programs. A program invokes the library-provided behavior via a mechanism of the language.</li>	
+			        <li><b><u>Constructor</u></b> - When an instance is created, the classes constructor is called (__init__)</li>
+			        <li><b><u>Self</u></b> - Used in the constructor, self is the instance and is always the first argument</li>
+			        <li><b><u>Instance Variable</u></b> - A variable associated with a specific instance</li>
+			        <li><b><u>Instance Method</u></b> - A function defined in a class and associated with an instance.</li>
+			    </ul>
+			</div>
+		</div>
+
+		<div id="stage-3-2">
+		    <h3>Things to know about Python</h3>
+		    <div class="info">
+		        This section includes some random notes about python<br>
+		        <ul>
+		            <li>Classes are defined in a file.  For instance turtle.Turtle(), calls the class “Turtle”, which is located in the file “turtle”</li>
+		            <li>Python has a standard library which is very extensive, offering a wide range of facilities. The library contains built-in modules (written in C) that provide access to system functionality such as file I/O that would otherwise be inaccessible to Python programmers, as well as modules written in Python that provide standardized solutions for many problems that occur in everyday programming.</li>
+		            <li>There are many external libraries that provide additional modules, some can be found on the python website.</li>
+					<li>
+						<button class='btn btn-info' data-popover="true" title= "<a href='https://docs.python.org/2/library/' target='_blank' style='color:white'> Examples of Things to know about Python</a>" data-content= "<embed src='https://docs.python.org/2/library/' width='800' height='300'>"><span class="glyphicon glyphicon-eye-open"></span> Python Standard Library reference</button> 
+					</li>
+		        </ul>
+		    </div>
+		</div>
+		<div id="stage-3-3">
+		    <h3>Examples from Stage 3</h3>
+		    <div class="info">
+		    <ul>
+		    	<li><b>Drawing with classes</b> - Uses Turtle to ease into classes 
+		    		<ul>
+		    			<li><button class='btn btn-info' data-popover="true" title= "Draw a circle using a square" data-content= "<embed src='https://docs.google.com/document/d/1aTzGTYNM3XB_PkMmY8Mun_8e-LjW0p7-IGi84buuqA8/pub?embedded=true' width='800' height='300'>"><span class="glyphicon glyphicon-eye-open"></span> Draw a circle using a square</button>
+						</li>
+		    		</ul>
+		    	</li>
+		    	<li><b>Using external libraries</b> - The examples below demonstrate using external libraries.  These must be imported prior to using; the examples below use 2 different methods of importing.
+		    		<ul>
+		    			<li>
+		    				<button class='btn btn-info' data-popover="true" title= "Send a text message via Python using twilo" data-content= "<embed src='https://docs.google.com/document/d/1d9xVJQdO7-7NifVFESUUTWnAVnMZi__BeiqgMvOjPww/pub?embedded=true' width='800' height='300'>"><span class="glyphicon glyphicon-eye-open"></span> Send a text message via Python using twilo</button>
+		    			</li>
+		    			<br>
+		    			<li>
+		    				<button class='btn btn-info' data-popover="true" title= "Demonstrates using the from...import Class" data-content= "<embed src='https://docs.google.com/document/d/1aTzGTYNM3XB_PkMmY8Mun_8e-LjW0p7-IGi84buuqA8/pub?embedded=true' width='800' height='300'>"><span class="glyphicon glyphicon-eye-open"></span> Demonstrates using the from...import Class</button>
+		    			</li>
+		    		</ul>
+		    	</li>	
+		    	<li><b>Profanity Editor</b> - This example demonstrates using the urllib module and some of its classes.  This module allows us to interact with the internet.
+		    		<ul>
+		    			<li> 
+		    				<button class='btn btn-info' data-popover="true" title= "Demonstrates classes within the urllib module" data-content= "<embed src='https://docs.google.com/document/d/1upaH2yGkzLn5MJvBwsOpmyREYVEesqwS0AmjwpGwb8E/pub?embedded=true' width='800' height='300'>"><span class="glyphicon glyphicon-eye-open"></span> Demonstrates classes within the urllib module</button> 
+		    			</li>
+		    		</ul>
+		    	</li>
+		    	<li> <b>Movie Data Base</b> - The example below is broken up into multiple files.  The first file is a python script that contains the info for a set of movies.  the second file contains a custom class (Movie) that I created, what this does is take in the movie info from the 1st <br>
+					&nbsp;&nbsp;&nbsp;file and creates an instance for that particular movie.  The third file is a python scrip that usues the info from the first 2 files to create the complete html code for our movie database.  Finally the fourth file is the html output.
+	    			<ul>
+	    				<li>
+		    				<!-- entertainment_center.py -->
+							<button class='btn btn-info' data-popover="true" title= "Holds the info for our movies" data-content= "<embed src='https://docs.google.com/document/d/12jhZQ5l4tsMavnNJ_pFgQY5ojrapyWk5e2g0fHn3Pzc/pub?embedded=true' width='800' height='300'>"><span class="glyphicon glyphicon-eye-open"></span> Holds the info for our movies</button> 
+							<!--media.py -->
+							<button class='btn btn-info' data-popover="true" title="This is our custom class" data-content= "<embed src='https://docs.google.com/document/d/1p36gwWsgp9Z-ujg-7Dow71-XM5CJ7JTCQhaX30QsOIU/pub?embedded=true' width='800' height='300'>"><span class="glyphicon glyphicon-eye-open"></span> This is our custom class </button> 
+							<!-- fresh_tomatoes.py -->
+							<button class='btn btn-info' data-popover="true" title="Python script to create the html code" data-content= "<embed src='https://docs.google.com/document/d/1p0LG2d-TFTFvIbfTD75Ihh5YpKG_AZnvXqZFNGNxGdo/pub?embedded=true' width='800' height='300'>"><span class="glyphicon glyphicon-eye-open"></span> Python script to create the html code </button> 
+							<!-- fresh_tomatoes.html -->
+							<button class='btn btn-info' data-popover="true" title="Final html output" data-content= "<embed src='https://docs.google.com/document/d/1_u6Q7p8_WCizDgjw_3RSUhTg5HkVR8Lf_WqElfcoF5I/pub?embedded=true' width='800' height='300'>"><span class="glyphicon glyphicon-eye-open"></span> Final html output</button> 
+						</li>     
+					</ul>
+		    	</li>
+		    	<li> <b>Inheritance</b> - The example below shows a breif example of inheritance.  Notice that "Parent" is passed through to the Class "Child".  Notice that the parameters in Class "Child" include parameters from the "Parent".  Also notice that the parameters from "Parent" 
+					&nbsp;&nbsp;&nbsp;are initialized using "Parent__init__(XXX)", within the def__init__ of the Child. Finally, notice that methods from the Parent are also inherited, this can be seen in the "show_info()" method of the example
+		    		<ul>
+		    			<li> 
+		    				<button class='btn btn-info' data-popover="true" title="A Quick example of how inheritance works" data-content= "<embed src='https://docs.google.com/document/d/1PT8fHSad8lP0MNs5f14Rn9FxKq3r71WKZJfYV5DusZY/pub?embedded=true' width='800' height='300'>"><span class="glyphicon glyphicon-eye-open"></span> A Quick example of how inheritance works</button> 
+		    			</li>
+		    		</ul>
+		    	</li>
+		    </ul>
+		    </div>
+		</div>
+		<div id="stage-3-4">
+		     <h3>Importing</h3>
+		     <div class="info">
+		    	Importing allows you to use classes that are defined in separate libraries.  These libraries can be the Standard Python Library, external libraries, or even classes that you have created<br>
+		    	<ul>
+		    		<li> "import turtle" - this imports the module turtle</li>
+		    		<li>"from twilio.rest import TwilioRestClient" - this imports the class "TwilioRestClient".  You can read it as - inside ""twilio" there is a folder called "rest" and inside that folder is a class called "TwilioRestClient", import "TwilioRestClient"</li>
+		    		<li> Import calls are typically at the top of the code</li>
+		    	</ul>
+		    </div>	
+		</div>
+		<div id="stage-3-5">
+		    <h3>Bootstrap</h3>
+		    <div class="info">
+		    	Bootstrap is a HTML, CSS, and JavaScript framework.  It provides many cool features that can be incorportated into your webpage.  While overwhelming at first, it becomes pretty easy to customize and manipulate.  Among the cool features is a grid system that can adapt to mobile or desktop as well as small screens or large screens.
+		    </div>
+		</div>    
+	</div>
+	<h2 id="reflinks" style="border-radius: inherit; margin: 10px; width: 871px">Reference Links</h2>
+	<div class= "lesson" style="font-size: small">
+		<div class="col-sm-3">
+			<ul>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/html/Reference" target="_blank">HTML Reference</a></li>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">CSS Reference</a></li>
+				<li><a href="http://www.color-hex.com/" target="_blank">Color Codes</a></li>
+			</ul>
+		</div>	
+		<div class="col-sm-3">
+			<ul>
+				<li><a href="http://assignments.udacity-extras.appspot.com/courses/html-css/index.html" target="blank">Udacity Sample Pages and Assets</a></li>
+				<li><a href="http://www.sitepoint.com/web-foundations/vendor-specific-properties/" target="blank">Vendor-specific Properties</a></li>
+				<li><a href="http://learn-2-code.appspot.com/additional_resources/#topic-1" target="_blank">Andy's Additional Resources</a></li>
+			</ul>
+		</div>
+		<div class="col-sm-3">
+			<ul>
+				<li><a href="http://www.w3schools.com/bootstrap/default.asp" target="blank">Bootstrap Reference</a></li>
+				<li><a href="http://validator.w3.org/#validate_by_input" target="_blank">HTML Validation</a></li>
+				<li><a href="http://jigsaw.w3.org/css-validator/#validate_by_input" target="_blank">CSS Validation</a></li>
+			</ul>
+		</div>
+		<div class="col-sm-3">
+			<ul>
+				<li><a href="http://www.tutorialspoint.com/python/index.htm" target="_blank">Python Resource</a></li>
+				<li><a href="https://www.udacity.com/course/viewer#!/c-none/l-300029886/e-299271807/m-299271808" target="_blank">Udacity Code Playground</a></li>
+			</ul>
+		</div>
+		<br style="clear:both;"/>
+	</div>
+<!--<h2 id="refvideos">Reference Videos</h2>
+	<div class="lesson">
+		<div class="col lesson">
+			<ul>
+				<li><a href="XXXXXXXX" target="_blank">YYYYYYYYYY</a>
+			</ul>
+		</div>	
+		<br style="clear:both;"/>
+	</div> -->
+<!-- <script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover({
+    	html:true
+    });   
+});
+</script> -->
+<script>
+var originalLeave = $.fn.popover.Constructor.prototype.leave;
+$.fn.popover.Constructor.prototype.leave = function(obj){
+  var self = obj instanceof this.constructor ?
+    obj : $(obj.currentTarget)[this.type](this.getDelegateOptions()).data('bs.' + this.type)
+  var container, timeout;
+
+  originalLeave.call(this, obj);
+
+  if(obj.currentTarget) {
+    container = $(obj.currentTarget).siblings('.popover')
+    timeout = self.timeout;
+    container.one('mouseenter', function(){
+      //We entered the actual popover – call off the dogs
+      clearTimeout(timeout);
+      //Let's monitor popover content instead
+      container.one('mouseleave', function(){
+        $.fn.popover.Constructor.prototype.leave.call(self, self);
+      });
+    })
+  }
+};
+
+
+$('body').popover({ selector: '[data-popover]', trigger: 'click hover', html: 'true', placement: 'auto', delay: {show: 50, hide: 400}});
+</script>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+	background: url("sunsetHMB2.jpg") no-repeat fixed;
+    background-size: cover;
+    opacity: 1;
+    border-radius: 15px; 
+    color: white;
+    padding: 20px 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    max-width: 2000px;
+    margin: 0 auto;
+    font-size: 1.6em;
+}
+p {
+    margin: 10px 0;
+}
+ol{
+	list-style-type: decimal;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    line-height: 1.5em; 
+    list-style-type: circle;
+}
+
+h1 {			/* Page Heading */
+    text-align: center;
+    color: #9bd7d5;
+}
+
+h2 {		/*Section Heading*/
+    background-color: #ff7260;
+    opacity: 0.8;
+    border-top-left-radius:inherit;
+    border-top-right-radius:inherit;
+    /*border-radius: inherit;*/
+    color: white;
+	text-align: center;
+    /*padding-left: 10px;*/
+    /*margin: 10px;*/
+	font-size: 50px;
+    width: 100%;
+	font-weight: bold;
+}
+h3{			/*Subsection Heading*/
+    padding-left: 10px;
+    background-color: #129793;
+    opacity: 0.8;
+    border-radius: 5px; 
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+	font-weight: bold;
+
+}
+/* TOC Heading */
+h4{		
+    text-align: center;
+    color: #598ed6; 
+    font-size: 2em;
+	font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Popover Header */
+.popover-title {
+    background-color: #48a8c7; 
+    color: #FFFFFF; 
+    font-size: 28px;
+    text-align:center;
+}
+/* Popover Body */
+.popover-content {
+    
+    background-color: #e3e8f3;
+    color: #FFFFFF;
+    padding: 25px;
+}
+.btn-info {
+    color: #fff;
+    background-color: #468499;
+    border-color: #46b8da;
+}
+.TOC {			/*This class sets the formatting for the Table of Contents*/
+    background-color: #fff;
+    opacity: 0.8;
+    border-radius: inherit; /* Inherited from <body>*/
+    padding: 10px;
+    margin: 10px;
+}
+.lesson{		/*This class sets the formatting for each subsection*/
+    background-color: #fff;
+    opacity: 0.8;
+	border-radius: inherit; /* Inherited from <body>*/
+    padding-bottom: 10px;
+    margin: 10px;
+    border-bottom: 10px;
+	color: black;
+}
+.lesson_refs {
+    background-color: #fff;
+    opacity: 0.8;
+    border-radius: inherit; /* Inherited from <body>*/
+    margin: 10px;
+    border-bottom: 10px;
+    color: black;
+    font-size: small;
+}
+.codeex {
+    text-align: left;
+	padding-left: 20%;
+}
+.popover {
+	 max-width: 1000px;
+    border: 2px solid #81f358;
+    border-radius: 20px;
+    background-color: #fff;
+    opacity: 1;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+}
+.info {
+    margin-left: 10px;
+    margin-right: 10px;
+}
