@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 
 <head>
@@ -15,8 +15,16 @@
 
 </head>
 
-<body>
+<body> -->
+{% extends "base.html" %}
 
+{% block troy %}
+	<div>
+		Hellooooo!
+	</div>
+{% endblock %}
+
+{% block content %}
 	<div>
 	<h1><img src="http://www.veryicon.com/icon/png/System/Farm%20Fresh/star.png" alt="Oops, does not compute!">Introduction to Programming<img src="http://www.veryicon.com/icon/png/System/Farm%20Fresh/star.png" alt="Oops, does not compute!"></h1>
 	</div>
@@ -789,6 +797,9 @@ $.fn.popover.Constructor.prototype.leave = function(obj){
 
 $('body').popover({ selector: '[data-popover]', trigger: 'click hover', html: 'true', placement: 'auto', delay: {show: 50, hide: 400}});
 </script>
-</body>
 
-</html>
+{% endblock %}
+<!-- </body>
+
+</html> -->
+
