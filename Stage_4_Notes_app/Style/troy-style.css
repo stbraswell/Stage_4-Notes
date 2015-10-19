@@ -11,7 +11,7 @@ body {
     opacity: 1;
     border-radius: 15px; 
     color: white;
-    padding: 20px 10px;
+    padding: 10px 10px;
     font-family: Helvetica, Arial, sans-serif;
     max-width: 2000px;
     margin: 0 auto;
@@ -35,6 +35,9 @@ li {
 
 h1 {			/* Page Heading */
     text-align: center;
+    font-size: 50px;
+    width: 100%;
+    font-weight: bold;
     color: #9bd7d5;
 }
 
@@ -108,11 +111,16 @@ h4{
     border-bottom: 10px;
 	color: black;
 }
+
+.lesson.bottom{
+    margin: 0px;
+}
+
 .lesson_refs {
     background-color: #fff;
     opacity: 0.8;
     border-radius: inherit; /* Inherited from <body>*/
-    margin: 10px;
+    margin: 0px;
     border-bottom: 10px;
     color: black;
     font-size: small;
@@ -134,4 +142,33 @@ h4{
 .info {
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.top {
+    position:absolute;
+    left:0; right:0;
+    height: 92px;
+}
+.left {
+    position:absolute;
+    left:0; top:92px; bottom: 0;
+    width: 150px;
+}
+.main {
+    position: absolute;
+    left:150px; top:92px; right:0; bottom:0;
+    border-radius: 15px; 
+}
+
+.bottom {
+    border-radius: 15px; 
+    margin: 10px;
+    max-width: 2000px
+}
+
+.bottom h2{
+    border-radius: 15px; 
+    margin: 0px;
+    margin-bottom: 10px;
+    max-width: 2000px
 }

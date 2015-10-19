@@ -42,6 +42,36 @@ class MainHandler(Handler):
         items = self.request.get_all("food")
         self.render("Notes - Stage 4.html", items = items)
 
-app = webapp2.WSGIApplication([
-    ('/', MainHandler)
-], debug=True)
+class Stage_0_Handler(Handler):
+    def get(self):
+        items = self.request.get_all("food")
+        self.render("Stage_0_Notes.html", items = items)
+
+class Stage_1_Handler(Handler):
+    def get(self):
+        items = self.request.get_all("food")
+        self.render("Stage_1_Notes.html", items = items)
+
+class Stage_2_Handler(Handler):
+    def get(self):
+        items = self.request.get_all("food")
+        self.render("Stage_2_Notes.html", items = items)
+
+class Stage_3_Handler(Handler):
+    def get(self):
+        items = self.request.get_all("food")
+        self.render("Stage_3_Notes.html", items = items)
+
+class Stage_4_Handler(Handler):
+    def get(self):
+        items = self.request.get_all("food")
+        self.render("Stage_4_Notes.html", items = items)
+
+app = webapp2.WSGIApplication([('/', MainHandler),
+                               ('/Stage0', Stage_0_Handler),
+                               ('/Stage1', Stage_1_Handler),
+                               ('/Stage2', Stage_2_Handler),
+                               ('/Stage3', Stage_3_Handler),
+                               ('/Stage4', Stage_4_Handler),
+                               ],
+                               debug=True)

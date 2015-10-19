@@ -1,0 +1,365 @@
+{% extends "base.html" %}
+{% block content %}	
+<div class='main'>
+	<div class="lesson">
+	<h2 id="stage-2">Stage 2: Python</h2>
+
+		<div id="stage-2-1">
+			<h3>Programming</h3>
+		</div>
+		<div class="info">
+			Programs tell computers what to do.  These programs are written in programming languages (like Python), which are special languages 
+			that are clear and precise.  "Natural" languages (like English) would not be great programming languages due to their ambiguity and verbosity. 
+		</div>
+		<div id="stage-2-2">
+			<h3> Python</h3>
+		</div>
+		<div class="info">
+			Python is a programming language which is run in an <em>interpreter</em>.  The <em>interpreter</em> runs the program, interprets them, 
+			then executes the program that was written in python by running the program in a language that the computer can understand.
+		</div>
+		<div id="stage-2-3">
+			<h3> Python Grammar</h3>
+			<div class="info">
+				Grammar is very important since computers are stupid!  While humans can interpret things like "me hungry", computers can't.  
+				So the language that is input as a command must follow specific rules, else what you expected to happen.....won't!
+			</div>
+		</div>
+		<div id="stage-2-4">
+			<h3>Python Expressions</h3>
+			<div class="info">
+				Python uses "expressions" as statements.  <br>
+				<ul>
+					<li>use "#" to make a comment in python</li>
+					<li>"print 1" will give "1"</li>
+					<li>"print 2 * 10" will give "20"</li>
+					<li>in python 5 / 2 = 2, but 5.0 / 2 = 2.5 or 5 / 2.0 = 2.5</li>
+				</ul>
+				Keep in mind that things like "print 2 *" will throw an error!
+			</div>
+		</div>	
+		<div id="stage-2-5">
+			<h3>Variables</h3>
+			<div class="info">
+				<ul>
+					<li>To "assign a variable" is to give a variable a value</li>
+					<li>Variables are assigned this way: "variable = expression"</li>
+					<li>EX: "Troy = 33", where "Troy" is the variable</li>
+				</ul>
+			</div>
+		</div>	
+		<div id="stage-2-6">
+			<h3>Strings</h3>
+			<div class="info">
+				<ul>
+					<li>Strings are a sequence of characters</li>
+					<li>EX: "Hello"</li>
+					<li>You can concatenate strings and Variables: if T = "Troy", Print 'Hello' + T = Hello Troy</li>
+					<li>Print '!' * 3 = !!!</li>
+				</ul>	
+			</div>
+		</div>
+		<div id="stage-2-7">
+			<h3>Indexing Strings</h3>
+			<div class="info">
+				<ul>
+					<li>When indexing strings, you count from left to right, starting with 0</li>
+					<li>SO: 'udacity'[0] --> 'u' | 'udacity'[1+1] --> 'a'</li>
+					<li>you can also use a variable that is a string: so if, name = 'Troy', name[1] -->'r'</li>
+					<li>if your index is greater than the number of letters in your string, you get an error: 'troy'[4] -->error</li>
+					<li>you can use negative numbers too, this will start counting from the end, so if, name = 'troy', name[-2] -->'o'</li>
+				</ul>
+			</div>		
+		</div>
+		<div id="stage-2-8">
+			<h3>Selecing Sub Sequences</h3>
+			<div class="info">
+				<ul>
+					<li>&lt;string&gt;[&lt;expression 1&gt;:&lt;expression 2&gt;], where &lt;expression 1&gt; is the start and &lt;expression 2&gt; is the end</li>
+					<li>EX:word = 'assume'</li>
+					<li>word[4:6] --> me</li>
+					<li>word[3:] --> ume</li>
+					<li>word[:2] --> as </li>
+					<li>word[:] --> assume </li>
+				</ul>	
+			</div>
+		</div>
+		<div id="stage-2-9">
+			<h3><b>Find</b>ing Strings in Strings</h3>
+			<div class="info">
+				<ul>
+					<li>&lt;string1&gt;.find(&lt;string2&gt;), where you are searching &lt;string1&gt; for &lt;string2&gt;</li>
+					<li>Find (aka method) is a built in procedure prvided by python, that operates on stings</li>
+					<li>if the target string is not found you get -1</li>
+					<li>"Test".find("te")--> -1 , due to capitalization</li>
+					<li>"Test".find("Te")--> 0 , because "Te" starts at position 0</li>
+					<li>you can also use variables instead of typing out &lt;string1&gt; or &lt;string2&gt;</li>
+					<li>every string begins with an "empty string" | empty string = ''</li>
+					<li>&lt;string1&gt;.find(&lt;string2&gt;,&lt;number&gt;), this tells find @ what position to start searching, which is useful for finding 
+						&lt;string2&gt; after the first time (or second...) it appears in &lt;string1&gt;</li>
+				</ul>	
+			</div>
+		</div>
+		<div id="stage-2-10">
+			<h3>Procedures/Functions: Input -> Function -> Output</h3>
+			<div class="info">
+				<ul>
+					<li>Procedures or functions are a predefined list of steps that take an input, manipulate the input at each step and then produce an output</li>
+					<li>The <b>benefits</b> of using procedures/functions are:
+						<ul>
+							<li>Reduction of code duplication</li>
+							<li>Decomposing complex problems into simpler pieces</li>
+							<li>Improving code clarity</li>
+							<li>Reuse code</li>
+						</ul>
+					</li>
+					<li>Procedures/functions must be defined using "def"</li>
+					<li>Procedures/functions expect to recieve the same number of inputs they are defined for</li>
+					<li>Procedures/functions need to have the return statement in order to produce an output</li>
+				</ul>	
+			</div>
+			<div class="codeex">
+				<span style="color:green">Example #1</span> - Simple procedure to show structure and basic function<br>
+	   				def add_two_numbers(number_1,Number_2):<br>
+	   			&nbsp;&nbsp;&nbsp;&nbsp; return number_1 + number_2<br>
+	   				<br>
+	    			print add_two_numbers (4,3) => 7<br>
+	   				print add_two_numbers ('hi','troy') => hitroy<br>
+	   				<br>
+			</div>
+
+			<div class="codeex">
+				<span style="color:green">Example #2</span> - Using Prcedures as inputs<br>
+	   				def square(n):<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;return n * n<br>
+	   				<br>
+	    			x = 2<br>
+	   				print square(2) => 4<br>
+	   				print square(square(x)) => 16<br>
+			</div>
+		</div>	
+		<div id="stage-2-11">
+			<h3>Making Decisions</h3>
+			<div class="info">
+			
+					Comparitors:<br>
+				
+						<ul>
+							<li>&lt;	-> less than</li>
+							<li>&gt; 	-> greater than</li>
+							<li>&lt;= 	-> less than or equal to</li>
+							<li>&gt;= 	-> greater than or equal to</li>
+							<li>!= 		-> not equal to</li>
+							<li>== 		-> equal to (NOTE: one equal sign is for assignment of varialbes, two equal signs checks for equality</li>
+							<li>or 		-> or operator.... it means or :)</li>
+							<li>and 	-> and operator.... it means and ;)</li>
+						</ul>
+					
+					Boolean Values are True or False<br>
+				
+						<ul>
+							<li> 2 &lt; 3 => True</li>
+							<li> 21 &lt; 3 => False</li>
+							<li>7 * 3 != 21 => False</li>
+						</ul>		
+			</div>
+		</div>	
+		<div id="stage-2-12">
+			<h3>IF statements</h3>
+			<div class="info">
+				<ul>
+					<li>IF statements will be executed once if the test expression is true</li>
+					<li><span style="color:green">Structure: </span>Notice that there is <u>no "end if"</u>, INDENTATION IS KEY!</li>
+				</ul>	
+				<div class="codeex">
+	   				if &lt;Test Expression&gt;:<br>
+	   			&nbsp;&nbsp;&nbsp;&nbsp; &lt;Block&gt;<br>
+	   				<br>
+	    			&lt;After if Code&gt;
+	   				<br>
+				</div>
+				<ul>
+					<li><span style="color:green">Example 1: </span>Defines a procedure that returns the ABS value of a number by using an if statement. </li>
+				</ul>
+				<div class="codeex">
+					def absolute(x):<br>
+	   				&nbsp;&nbsp;if x &lt; 0:<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp; x = -x<br>
+	   				&nbsp;&nbsp;return x<br>
+	   				<br>
+				</div>
+				<ul>
+					<li><span style="color:green">Example 2: </span>Defines a procedure that returns the bigger of x and y. </li>
+				</ul>
+				<div class="codeex">
+					def bigger(x,y):<br>
+	   				&nbsp;&nbsp;if x &gt; y:<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;return x<br>
+	   				&nbsp;&nbsp;if x == y:<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;return x<br>
+	   				&nbsp;&nbsp;else:<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;return y<br>
+	   				<br>
+				</div>	
+				<ul>
+					<li><span style="color:green">OR: </span>If the first expression evaluates to TRUE, the value is True and the 2nd expression is not evaluated</li>
+				</ul>
+				<div class="codeex">
+					def bigger(x,y):<br>
+	   				&nbsp;&nbsp;if x &gt; y or if x == y:<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;return x<br>
+	   				&nbsp;&nbsp;else:<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;return y<br>
+	   				<br>
+				</div>
+				<ul>
+					<li><span style="color:green">Example 3: </span>Defines a procedure that returns the bigger of a,b and c.</li>
+				</ul>
+				<div class="codeex">
+					def biggest (a,b,c):<br>
+					&nbsp;&nbsp;if a &gt; b:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;if a &gt; c:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return a<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return c<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;if b &gt; c:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return b<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return c<br>
+				</div>						
+				<ul>
+					<li><span style="color:green">Example 4: </span>Defines a procedure that returns the bigger of a,b and c, but uses the "bigger" procedure.</li>
+				</ul>
+				<div class="codeex">
+					def biggest (a,b,c):<br>
+					&nbsp;&nbsp;return bigger(bigger(a,b),c)<br>
+				</div>			
+			</div>
+		</div>	
+		<div id="stage-2-13">
+			<h3>More Loops: While</h3>
+			<div class="info">
+				<ul>
+					<li>While loops will be executed as long as the test expression is true</li>
+					<li><span style="color:green">Structure: </span></li>
+				</ul>	
+				<div class="codeex">
+	   				while &lt;Test Expression&gt;:<br>
+	   			&nbsp;&nbsp;&nbsp;&nbsp; &lt;Block&gt;<br>
+	   				<br>
+	    			&lt;After While Code&gt;
+	   				<br>
+				</div>
+				<ul>
+					<li><span style="color:green">Example 1: </span>Prints #'s 0 - n</li>
+				</ul>	
+				<div class="codeex">
+					def print_numbers(n):<br>
+					&nbsp;&nbsp;i = 0<br>
+	   				&nbsp;&nbsp;while i &lt; n:<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;print i<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;i = i + 1<br>
+	   				&nbsp;&nbsp;return<br>
+	   				<br>
+				</div>
+				<ul>
+					<li><span style="color:green">Example 2: </span>Prints #'s 1 - n, notice the difference in EX. above</li>
+				</ul>	
+				<div class="codeex">
+					def print_numbers(n):<br>
+					&nbsp;&nbsp;i = 0<br>
+	   				&nbsp;&nbsp;while i &lt; n:<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;i = i + 1<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;print i<br>
+	   				&nbsp;&nbsp;return<br>
+	   				<br>
+				</div>	
+				<ul>
+					<li>'break' gives us a way to stop the loop even while the test condition is true</li>
+				</ul>
+				<div class="codeex">
+	   				whlie&lt;TestExpression&gt;:<br>
+	   				&nbsp;&nbsp;if &lt;BreakTest&gt;:<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;break<br>
+	   				&nbsp;&nbsp;&lt;more code&gt;<br>
+	   				&lt;After Whlie Code&gt;<br>
+	   				<br>
+				</div>
+			</div>
+		</div>
+		<div id="stage-2-14">
+		    <h3>Structured Data: Lists</h3>
+		    <div class="info">
+		        A list is a sequence of Anything - characters, strings, numbers...even other lists!<br>
+		        <ul>
+		            <li>Lists take the form: &lt;list&gt; = [&lt;expression&gt;,&lt;expression&gt;,...]</li>
+		            <li>Empty list =&gt; []</li>
+		            <li>Elements of a list start from 0 so: [0,1,2,3...]</li>
+		            <li>When defining a list, especially a long list, you can split the &lt;expression&gt;'s up</li>
+		            <li>You can even index within an indexed list. i.e. list1 = [['Troy','is'],['cool','!']- print list1[1][1] =&gt; will print the 2nd element of the 2nd list in the list, in this case '!'</li>
+		            <li><a href="https://drive.google.com/open?id=0B2DsntQwDC9dZ2dwemtaYjBfTzA" target="_blank"> Examples of Structured Data: Lists</a></li>
+		        </ul>
+		    </div>
+		</div>
+
+		<div id="stage-2-15">
+		    <h3>List Mutations and Aliasing</h3>
+		    <div class="info">
+		        Lists support Mutations and Aliasing.  With mutation you are able to change the value of a list after it has been created.  With Aliasing, you can assign a list to two separate names; however if you mutate the list for one, you mutate it for both. <br>
+		        <ul>
+
+		            <li><a href="https://drive.google.com/open?id=0B2DsntQwDC9dS3dDTXlncnY2MG8" target="_blank"> Examples of List Mutations and Aliasing</a></li>
+		        </ul>
+		    </div>
+		</div>
+
+		<div id="stage-2-16">
+		    <h3>List Operations</h3>
+		    <div class="info">
+		        List operations allow you to perform certain tasks on lists<br>
+		        <ul>
+		            <li>The "append" operation lets you insert another element into an existing list: &lt;list&gt;.append(&lt;element&gt;)</li>
+		            <li>The "plus" operation is like concatination for lists: [1,2] + [3,4] =&gt; [1,2,3,4]
+		Note: The "len" operation outputs the number of elements in a list (this also works on strings): len([0,1]) =&gt; 2</li>
+		            <li><a href="https://drive.google.com/open?id=0B2DsntQwDC9dNm56SDFETVhERjA" target="_blank"> Examples of List Operations</a></li>
+		        </ul>
+		    </div>
+		</div>
+
+		<div id="stage-2-17">
+		    <h3>Sructured Data: For Loops</h3>
+		    <div class="info">
+		        For loops used on lists are similar to using While loops, however they make it easier because it essentially has a built in counter: the length of the list!<br>
+		        <ul>
+		            <li>for &lt;name&gt; in &lt;list&gt;:</li>
+		            <li>&lt;name&gt; is essentially the variable name</li>
+		            <li>For loop on list example:</li>
+		            <li>"Index" is used to find an element within a list.  It takes the form: &lt;list&gt;.index(&lt;value&gt;)</li>
+		            <li>Index always gives the 1st found position</li>
+		            <li>Index will return an error if the value is not found</li>
+		            <li>"in" is used to determine wether or not a value is in a list.  it takes the form: &lt;value&gt; in &lt;list&gt;</li>
+		            <li>if &lt;value&gt; is in the &lt;list&gt;, output is True otherwise, output is false</li>
+		            <li>&lt;value&gt; not in &lt;list&gt; -&gt; is the opposite of "in".</li>
+		            <li><a href="https://drive.google.com/open?id=0B2DsntQwDC9dSUhTVlEwbTVZakE" target="_blank"> Examples of Sructured Data: For Loops</a></li>
+		        </ul>
+		    </div>
+		</div>
+
+		<div id="stage-2-18">
+		    <h3>Problem Solving</h3>
+		    <div class="info">
+		        Problem solving isn't just about understanding the problem, it's also about understanding how to solve it.  Breaking the porblem up into multiple part and tackling the smaller parts one at a time makes it eaiser. Understanding the inputs and outputs is a must, but understanding the relationship between them is KEY!<br>
+		        <ul>
+		            <li>Step 0: Don't Panic</li>
+		            <li>Step 1: What are the inputs (and how are they represented)?</li>
+		            <li>Step 2: What are the outputs?</li>
+		            <li>Step 3: Solve the Problem!</li>
+		            <li>Step 4: Simple Mechanical Solution</li>
+		            <li>Step 5: Develop incrementally and test as you go</li>
+		            <li><button class='btn btn-info' data-popover="true" title= "Problem Slving Ex.: Calculate age in days" data-content= "<embed src='https://docs.google.com/document/d/1o0drwVV-0yQDOTNDaoP_oUph21SZo2s0rqc-u6NIgWA/pub?embedded=true' width='800' height='300'>"><span class="glyphicon glyphicon-eye-open"></span>Problem Slving Ex.: Calculate age in days</button></li>
+		        </ul>
+		    </div>
+		</div>
+	</div>
+{% endblock %}

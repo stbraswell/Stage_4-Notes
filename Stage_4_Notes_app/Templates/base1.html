@@ -7,69 +7,23 @@
 
   <title>Troy's Notes</title>
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/Style/styles.css">
   <link rel="stylesheet" href="/Style/troy-style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-  <script src="script.js"></script>
 
 </head>
 
 <body>
-
-<div class='top'>
-<h1><img src="http://www.veryicon.com/icon/png/System/Farm%20Fresh/star.png" alt="Oops, does not compute!">Introduction to Programming<img src="http://www.veryicon.com/icon/png/System/Farm%20Fresh/star.png" alt="Oops, does not compute!"></h1>
-</div>
-
-<div class='left' id='cssmenu'>
-<ul>
-   <li><a href='/'><span>Home</span></a></li>
-   <li class='active has-sub'><a href='/Stage0'><span>Stage 0</span></a>
-      <ul>
-         <li class='has-sub'><a href='#'><span>Product 1</span></a></li>
-         <li class='has-sub'><a href='#'><span>Product 2</span></a></li>
-      </ul>
-   </li>
-      <li class='active has-sub'><a href='/Stage1'><span>Stage 1</span></a>
-      <ul>
-         <li class='has-sub'><a href='#'><span>Product 1</span></a></li>
-         <li class='has-sub'><a href='#'><span>Product 2</span></a></li>
-      </ul>
-   </li>
-      <li class='active has-sub'><a href='/Stage2'><span>Stage 2</span></a>
-      <ul>
-         <li class='has-sub'><a href='#'><span>Product 1</span></a></li>
-         <li class='has-sub'><a href='#'><span>Product 2</span></a></li>
-      </ul>
-   </li>
-      <li class='active has-sub'><a href='/Stage3'><span>Stage 3</span></a>
-      <ul>
-         <li class='has-sub'><a href='#'><span>Product 1</span></a></li>
-         <li class='has-sub'><a href='#'><span>Product 2</span></a></li>
-      </ul>
-   </li>
-      <li class='active has-sub'><a href='/Stage4'><span>Stage 4</span></a>
-      <ul>
-         <li class='has-sub'><a href='#'><span>Product 1</span></a></li>
-         <li class='has-sub'><a href='#'><span>Product 2</span></a></li>
-      </ul>
-   </li>
-   <li><a href='#'><span>About</span></a></li>
-   <li class='last'><a href='#'><span>Contact</span></a></li>
-</ul>
-</div>
-<!--   {% block troy %}
-  {% endblock %} -->
+  {% block troy %}
+  {% endblock %}
 
   {% block content %}
   {% endblock %}
-<div class=bottom>
-  <h2 id="reflinks">Reference Links</h2>
-  <div class= "lesson_refs" style="font-size: small">
+
+  <h2 id="reflinks" style="border-radius: inherit; margin: 10px; width: 871px">Reference Links</h2>
+  <div class= "lesson" style="font-size: small">
     <div class="col-sm-3">
       <ul>
         <li><a href="https://developer.mozilla.org/en-US/docs/Web/html/Reference" target="_blank">HTML Reference</a></li>
@@ -99,8 +53,6 @@
     </div>
     <br style="clear:both;"/>
   </div>
-</div>
-</div>
 <!--<h2 id="refvideos">Reference Videos</h2>
   <div class="lesson">
     <div class="col lesson">

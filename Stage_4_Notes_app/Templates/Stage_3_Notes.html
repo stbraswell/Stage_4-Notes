@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+{% block content %}
+<div class='main'>
+	<div class="lesson">
+	<h2 id="stage-3">Stage 3: Programming with objects</h2>
+		<div id="stage-3-1">
+			<div class="info">
+				Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects", which are data structures that contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known as methods. A distinguishing feature of objects is that an object's procedures can access and often modify the data fields of the object with which they are associated (objects have a notion of "this" or "self"). In OO programming, computer programs are designed by making them out of objects that interact with one another. There is significant diversity in object-oriented programming, but most popular languages are class-based, meaning that objects are instances of classes, which typically also determines their type.
+			</div>
+			<h3>Structured Data: Definitions</h3>
+			<div class="info">
+			    <ul>
+			        <li><b><u>Class</u></b> - A neatly packaged box that puts things together really well. A class is like a blueprint of a building - it can be used to build multiple buildings. A user-defined prototype for an object that defines a set of attributes that characterize any object of the class. The attributes are data members (class variables and instance variables) and methods, accessed via dot notation.</li>
+			        <li><b><u>Instance/Object</u></b> - A unique instance of a data structure that's defined by its class. An object comprises both data members (class variables and instance variables) and methods. An individual object of a certain class. An object obj that belongs to a class Circle, for example, is an instance of the class Circle.</li>
+			        <li><b><u>Module</u></b> - A module allows you to logically organize your Python code. Grouping related code into a module makes the code easier to understand and use. A module is a Python object with arbitrarily named attributes that you can bind and reference.  A module is a file consisting of Python code. A module can define functions, classes and variables. A module can also include runnable code.</li>
+			        <li><b><u>Library</u></b> - A library is a collection of implementations of behavior, written in terms of a language, that has a well-defined interface by which the behavior is invoked. This means that as long as a higher level program uses a library to make system calls, it does not need to be re-written to implement those system calls over and over again. In addition, the behavior is provided for reuse by multiple independent programs. A program invokes the library-provided behavior via a mechanism of the language.</li>	
+			        <li><b><u>Constructor</u></b> - When an instance is created, the classes constructor is called (__init__)</li>
+			        <li><b><u>Self</u></b> - Used in the constructor, self is the instance and is always the first argument</li>
+			        <li><b><u>Instance Variable</u></b> - A variable associated with a specific instance</li>
+			        <li><b><u>Instance Method</u></b> - A function defined in a class and associated with an instance.</li>
+			    </ul>
+			</div>
+		</div>
+
+		<div id="stage-3-2">
+		    <h3>Things to know about Python</h3>
+		    <div class="info">
+		        This section includes some random notes about python<br>
+		        <ul>
+		            <li>Classes are defined in a file.  For instance turtle.Turtle(), calls the class “Turtle”, which is located in the file “turtle”</li>
+		            <li>Python has a standard library which is very extensive, offering a wide range of facilities. The library contains built-in modules (written in C) that provide access to system functionality such as file I/O that would otherwise be inaccessible to Python programmers, as well as modules written in Python that provide standardized solutions for many problems that occur in everyday programming.</li>
+		            <li>There are many external libraries that provide additional modules, some can be found on the python website.</li>
+					<li>
+						<button class='btn btn-info' data-popover="true" title= "<a href='https://docs.python.org/2/library/' target='_blank' style='color:white'> Examples of Things to know about Python</a>" data-content= "<embed src='https://docs.python.org/2/library/' width='800' height='300'>"><span class="glyphicon glyphicon-eye-open"></span> Python Standard Library reference</button> 
+					</li>
+		        </ul>
+		    </div>
+		</div>
+		<div id="stage-3-3">
+		    <h3>Examples from Stage 3</h3>
+		    <div class="info">
+		    <ul>
+		    	<li><b>Drawing with classes</b> - Uses Turtle to ease into classes 
+		    		<ul>
+		    			<li><button class='btn btn-info' data-popover="true" title= "Draw a circle using a square" data-content= "<embed src='https://docs.google.com/document/d/1aTzGTYNM3XB_PkMmY8Mun_8e-LjW0p7-IGi84buuqA8/pub?embedded=true' width='800' height='300'>"><span class="glyphicon glyphicon-eye-open"></span> Draw a circle using a square</button>
+						</li>
+		    		</ul>
+		    	</li>
+		    	<li><b>Using external libraries</b> - The examples below demonstrate using external libraries.  These must be imported prior to using; the examples below use 2 different methods of importing.
+		    		<ul>
+		    			<li>
+		    				<button class='btn btn-info' data-popover="true" title= "Send a text message via Python using twilo" data-content= "<embed src='https://docs.google.com/document/d/1d9xVJQdO7-7NifVFESUUTWnAVnMZi__BeiqgMvOjPww/pub?embedded=true' width='800' height='300'>"><span class="glyphicon glyphicon-eye-open"></span> Send a text message via Python using twilo</button>
+		    			</li>
+		    			<br>
+		    			<li>
+		    				<button class='btn btn-info' data-popover="true" title= "Demonstrates using the from...import Class" data-content= "<embed src='https://docs.google.com/document/d/1aTzGTYNM3XB_PkMmY8Mun_8e-LjW0p7-IGi84buuqA8/pub?embedded=true' width='800' height='300'>"><span class="glyphicon glyphicon-eye-open"></span> Demonstrates using the from...import Class</button>
+		    			</li>
+		    		</ul>
+		    	</li>	
+		    	<li><b>Profanity Editor</b> - This example demonstrates using the urllib module and some of its classes.  This module allows us to interact with the internet.
+		    		<ul>
+		    			<li> 
+		    				<button class='btn btn-info' data-popover="true" title= "Demonstrates classes within the urllib module" data-content= "<embed src='https://docs.google.com/document/d/1upaH2yGkzLn5MJvBwsOpmyREYVEesqwS0AmjwpGwb8E/pub?embedded=true' width='800' height='300'>"><span class="glyphicon glyphicon-eye-open"></span> Demonstrates classes within the urllib module</button> 
+		    			</li>
+		    		</ul>
+		    	</li>
+		    	<li> <b>Movie Data Base</b> - The example below is broken up into multiple files.  The first file is a python script that contains the info for a set of movies.  the second file contains a custom class (Movie) that I created, what this does is take in the movie info from the 1st <br>
+					&nbsp;&nbsp;&nbsp;file and creates an instance for that particular movie.  The third file is a python scrip that usues the info from the first 2 files to create the complete html code for our movie database.  Finally the fourth file is the html output.
+	    			<ul>
+	    				<li>
+		    				<!-- entertainment_center.py -->
+							<button class='btn btn-info' data-popover="true" title= "Holds the info for our movies" data-content= "<embed src='https://docs.google.com/document/d/12jhZQ5l4tsMavnNJ_pFgQY5ojrapyWk5e2g0fHn3Pzc/pub?embedded=true' width='800' height='300'>"><span class="glyphicon glyphicon-eye-open"></span> Holds the info for our movies</button> 
+							<!--media.py -->
+							<button class='btn btn-info' data-popover="true" title="This is our custom class" data-content= "<embed src='https://docs.google.com/document/d/1p36gwWsgp9Z-ujg-7Dow71-XM5CJ7JTCQhaX30QsOIU/pub?embedded=true' width='800' height='300'>"><span class="glyphicon glyphicon-eye-open"></span> This is our custom class </button> 
+							<!-- fresh_tomatoes.py -->
+							<button class='btn btn-info' data-popover="true" title="Python script to create the html code" data-content= "<embed src='https://docs.google.com/document/d/1p0LG2d-TFTFvIbfTD75Ihh5YpKG_AZnvXqZFNGNxGdo/pub?embedded=true' width='800' height='300'>"><span class="glyphicon glyphicon-eye-open"></span> Python script to create the html code </button> 
+							<!-- fresh_tomatoes.html -->
+							<button class='btn btn-info' data-popover="true" title="Final html output" data-content= "<embed src='https://docs.google.com/document/d/1_u6Q7p8_WCizDgjw_3RSUhTg5HkVR8Lf_WqElfcoF5I/pub?embedded=true' width='800' height='300'>"><span class="glyphicon glyphicon-eye-open"></span> Final html output</button> 
+						</li>     
+					</ul>
+		    	</li>
+		    	<li> <b>Inheritance</b> - The example below shows a breif example of inheritance.  Notice that "Parent" is passed through to the Class "Child".  Notice that the parameters in Class "Child" include parameters from the "Parent".  Also notice that the parameters from "Parent" 
+					&nbsp;&nbsp;&nbsp;are initialized using "Parent__init__(XXX)", within the def__init__ of the Child. Finally, notice that methods from the Parent are also inherited, this can be seen in the "show_info()" method of the example
+		    		<ul>
+		    			<li> 
+		    				<button class='btn btn-info' data-popover="true" title="A Quick example of how inheritance works" data-content= "<embed src='https://docs.google.com/document/d/1PT8fHSad8lP0MNs5f14Rn9FxKq3r71WKZJfYV5DusZY/pub?embedded=true' width='800' height='300'>"><span class="glyphicon glyphicon-eye-open"></span> A Quick example of how inheritance works</button> 
+		    			</li>
+		    		</ul>
+		    	</li>
+		    </ul>
+		    </div>
+		</div>
+		<div id="stage-3-4">
+		     <h3>Importing</h3>
+		     <div class="info">
+		    	Importing allows you to use classes that are defined in separate libraries.  These libraries can be the Standard Python Library, external libraries, or even classes that you have created<br>
+		    	<ul>
+		    		<li> "import turtle" - this imports the module turtle</li>
+		    		<li>"from twilio.rest import TwilioRestClient" - this imports the class "TwilioRestClient".  You can read it as - inside ""twilio" there is a folder called "rest" and inside that folder is a class called "TwilioRestClient", import "TwilioRestClient"</li>
+		    		<li> Import calls are typically at the top of the code</li>
+		    	</ul>
+		    </div>	
+		</div>
+		<div id="stage-3-5">
+		    <h3>Bootstrap</h3>
+		    <div class="info">
+		    	Bootstrap is a HTML, CSS, and JavaScript framework.  It provides many cool features that can be incorportated into your webpage.  While overwhelming at first, it becomes pretty easy to customize and manipulate.  Among the cool features is a grid system that can adapt to mobile or desktop as well as small screens or large screens.
+		    </div>
+		</div>    
+	</div>
+{% endblock %}
