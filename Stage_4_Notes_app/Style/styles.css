@@ -70,6 +70,8 @@
 }
 #cssmenu ul {
   background: #fff;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 #cssmenu > ul > li {
   border-left: 3px solid #d7d8da;
