@@ -20,14 +20,14 @@
 </head>
 
 <body>
-
+<div id="wrapper">
 <div class='top'>
 <h1><img src="http://www.veryicon.com/icon/png/System/Farm%20Fresh/star.png" alt="Oops, does not compute!">Introduction to Programming<img src="http://www.veryicon.com/icon/png/System/Farm%20Fresh/star.png" alt="Oops, does not compute!"></h1>
 </div>
 
 <div class='left' id='cssmenu'>
 <ul>
-   <li><a href='/'><span>Home</span></a></li>
+   <li id="top_menu"><a href='/'><span>Home</span></a></li>
    <li class='active has-sub'><a href='/Stage0'><span>Stage 0</span></a>
       <ul>
          <li class='has-sub'><a href='/Stage0#internet'><span>The Internet</span></a></li>
@@ -72,25 +72,30 @@
    </li>
       <li class='active has-sub'><a href='/Stage3'><span>Stage 3</span></a>
       <ul>
-         <li class='has-sub'><a href='#'><span>Product 1</span></a></li>
-         <li class='has-sub'><a href='#'><span>Product 2</span></a></li>
+         <li class='has-sub'><a href='/Stage3#structured_data'><span>Structured Data: Definitions</span></a></li>
+         <li class='has-sub'><a href='/Stage3#things_to_know'><span>Things to know about Python</span></a></li>
+         <li class='has-sub'><a href='/Stage3#examples'><span>Examples from Stage 3</span></a></li>
+         <li class='has-sub'><a href='/Stage3#importing'><span>Importing</span></a></li>
+         <li class='has-sub'><a href='/Stage3#bootstrap'><span>Bootstrap</span></a></li>
       </ul>
    </li>
       <li class='active has-sub'><a href='/Stage4'><span>Stage 4</span></a>
       <ul>
-         <li class='has-sub'><a href='#'><span>Product 1</span></a></li>
-         <li class='has-sub'><a href='#'><span>Product 2</span></a></li>
+         <li class='has-sub'><a href='/Stage4#intro'><span>Intro to Networks</span></a></li>
+         <li class='has-sub'><a href='/Stage4#making_a_network'><span>Making a network</span></a></li>
+         <li class='has-sub'><a href='/Stage4#internet'><span>Make the internet work for you</span></a></li>
       </ul>
    </li>
-   <li><a href='#'><span>About</span></a></li>
-   <li class='last'><a href='#'><span>Contact</span></a></li>
+   <li id="bottom_menu"><a href='/about'><span>About</span></a></li>
+   <!-- <li class='last'><a href='#'><span>Contact</span></a></li> -->
 </ul>
 </div>
 <!--   {% block troy %}
   {% endblock %} -->
-
+<div id="content">
   {% block content %}
   {% endblock %}
+</div>
 <div class=bottom>
   <h2 id="reflinks">Reference Links</h2>
   <div class= "lesson_refs" style="font-size: small">

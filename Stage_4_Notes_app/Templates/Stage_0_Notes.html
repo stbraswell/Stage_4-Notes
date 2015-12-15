@@ -1,66 +1,65 @@
 {% extends "base.html" %} 
 {% block content %}
-<div class='main'>
-	<div class="lesson">
+<div class="lesson">
 	<h2 id="stage-0">Stage 0: The basics of the Internet</h2>
-		<div id="stage-0-1">
-			<a name="internet"></a>
-			<h3>The Internet</h3>
-		</div>
-		<div class="info">
-			<p> 
-				The Internet is a collection of computers that talk to each other. The web is a collection of
-		  		HTML docs.  When a user clicks on a link, that link is essentially an address to an HTML file on a server.
-		  		The browser translates that HTML file into a webpage that the user sees.  HTTP is the main protocol of the web.  
-				HTML stands for Hypetext Markup Language.
-			</p>
-		</div>
-		<div id="stage-0-2">
-			<a name=tags></a>
-			<h3>Tags</h3>
-		</div>
-		<div class="info">
-			<p>	
-				Tags are instructions to the computer and are not seen outside of the code <em> (e.g. on the webpage).
-				</em> Elements are the complete tag, so from opening to closing.  These are also the "markup". 
-				Some tags need to be closed, if these types of tags are not closed, then the tag will apply to all text 
-				following the opening of the tag.Other tags do not need to be closed, these are called "Void Tags".  
-				Tags can also have attributes.  These attributes give more dimension to a tag, such as linking a webpage to text.
-			</p>
-		</div>
-		<div id="stage-0-3">
-			<a name=whitespaceinhtml></a>
-			<h3>Whitespace in HTML</h3>
-		</div>
-		<div class="info">
-			<p>
-				Whitespace in HTML doesn't translate 1:1 on the webpage.  Spaces seem to be 1:1, but multiple spaces or carrige returns do not.  
-				For example, this is what 10 spaces looks like "          ". 
-			</p>
-		</div>
-		<div id="stage-0-4">
-			<a name=inlineandblock></a>
-			<h3>Inline and Block</h3>
-		</div>
-		<div class="info">
-			<p>
-				There are inline and block elements.  Block elements seem to protect their contents by fencing them, like the paragraph element.
-				Block elements are displayed with a line break while inline elements are not. All elements are rendered as boxes, and only some block 
-				elements can be container elements for other block elements. For instance, a &lt;div&gt; can have a &lt;p&gt;, an &lt;ol&gt;, a &lt;ul&gt;,
-				another &lt;div&gt;, but an &lt;ol&gt; or &lt;ul&gt; cannot have a &lt;p&gt; or a &lt;br&gt;.
-			</p>
-		</div>
-		<div id="stage-0-5">
-			<a name=troysthoughts></a>
-			<h3>Troy's Thoughts</h3>
-		</div>
-		<div class="info">
-			<ul>
-				<li>	Hey look, I'm already writing in HTML!<br></li>
-	  			<li>	Computers take code literally and want it to be in an exact format.  One sintax mistake and it's not going to do what you thought you told it to do.<br></li>
-	  			<li>	You can't know everything about coding or a particular language; that's why we have <a href="http://www.google.com" target="_blank"> this </a></li>
-			</ul>
-		</div>
+	<div id="stage-0-1">
+		<a name="internet"></a>
+		<h3>The Internet</h3>
 	</div>
+	<div class="info">
+		<p> 
+			The Internet is a collection of computers that talk to each other. The web is a collection of
+	  		HTML docs.  When a user clicks on a link, that link is essentially an address to an HTML file on a server.
+	  		The browser translates that HTML file into a webpage that the user sees.  HTTP is the main protocol of the web.  
+			HTML stands for Hypetext Markup Language.
+		</p>
+	</div>
+	<div id="stage-0-2">
+		<a name=tags></a>
+		<h3>Tags</h3>
+	</div>
+	<div class="info">
+		<p>	
+			Tags are instructions to the computer and are not seen outside of the code <em> (e.g. on the webpage).
+			</em> Elements are the complete tag, so from opening to closing.  These are also the "markup". 
+			Some tags need to be closed, if these types of tags are not closed, then the tag will apply to all text 
+			following the opening of the tag.Other tags do not need to be closed, these are called "Void Tags".  
+			Tags can also have attributes.  These attributes give more dimension to a tag, such as linking a webpage to text.
+		</p>
+	</div>
+	<div id="stage-0-3">
+		<a name=whitespaceinhtml></a>
+		<h3>Whitespace in HTML</h3>
+	</div>
+	<div class="info">
+		<p>
+			Whitespace in HTML doesn't translate 1:1 on the webpage.  Spaces seem to be 1:1, but multiple spaces or carrige returns do not.  
+			For example, this is what 10 spaces looks like "          ". 
+		</p>
+	</div>
+	<div id="stage-0-4">
+		<a name=inlineandblock></a>
+		<h3>Inline and Block</h3>
+	</div>
+	<div class="info">
+		<p>
+			There are inline and block elements.  Block elements seem to protect their contents by fencing them, like the paragraph element.
+			Block elements are displayed with a line break while inline elements are not. All elements are rendered as boxes, and only some block 
+			elements can be container elements for other block elements. For instance, a &lt;div&gt; can have a &lt;p&gt;, an &lt;ol&gt;, a &lt;ul&gt;,
+			another &lt;div&gt;, but an &lt;ol&gt; or &lt;ul&gt; cannot have a &lt;p&gt; or a &lt;br&gt;.
+		</p>
+	</div>
+	<div id="stage-0-5">
+		<a name=troysthoughts></a>
+		<h3>Troy's Thoughts</h3>
+	</div>
+	<div class="info">
+		<ul>
+			<li>	Hey look, I'm already writing in HTML!<br></li>
+  			<li>	Computers take code literally and want it to be in an exact format.  One sintax mistake and it's not going to do what you thought you told it to do.<br></li>
+  			<li>	You can't know everything about coding or a particular language; that's why we have <a href="http://www.google.com" target="_blank"> this </a></li>
+		</ul>
+	</div>
+</div>
 
 {% endblock %}

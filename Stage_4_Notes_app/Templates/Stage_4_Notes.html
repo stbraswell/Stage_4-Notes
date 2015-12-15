@@ -1,20 +1,47 @@
-Stage 4: Allow Comments (Google App Engine, Networks and Servers)
-4.1: Intro to Networks
-Network - a group of entities that can communicate, even though they are not all directly connected.  Think of it like Andy can talk to Amber and Amber can talk to Crystal. So if Andy wants to talk to Crystal he has to go through Amber.
-Latency - The time it takes for a message to get from source to destination.  This is measured in time.
-Bandwidth - The amount of info that can be transmitted per unit of time.  This is measured in Units of info/time.  AKA Mbps
-Bit - the smallest unit of info.  1 or 0
-Protocol - a set of rules that tell you how 2 intities can talk to each other.  Internet uses http (hypertext transfer protocol)
+{% extends "base.html" %}
+{% block content %}
+<div class="lesson">
+	<h2 id="stage-4">Stage 4: Allow Comments <br>
+		<span style="font-size: 30px">(Google App Engine, Networks and Servers)</span></h2>
+	<div id="stage-4-1">
+		<a name=intro></a>
+		<h3>Intro to Networks</h3>
+		<div class="info">
+			<ul>
+				<li><b><u>Network</b></u> - a group of entities that can communicate, even though they are not all directly connected.  Think of it like Andy can talk to Amber and Amber can talk to Crystal. So if Andy wants to talk to Crystal he has to go through Amber.</li>
+				<li><b><u>Latency</b></u> - The time it takes for a message to get from source to destination.  This is measured in time.</li>
+				<li><b><u>Bandwidth</b></u> - The amount of info that can be transmitted per unit of time.  This is measured in Units of info/time.  AKA Mbps</li>
+				<li><b><u>Bit</b></u> - the smallest unit of info.  1 or 0</li>
+				<li><b><u>Protocol</b></u> - a set of rules that tell you how 2 intities can talk to each other.  Internet uses http (hypertext transfer protocol</li>
+			</ul>
+		</div>
+	</div>
+	<div id="stage-4-2">
+		<a name=making_a_network></a>
+	    <h3>Making a network</h3>
+	    <div class="info">
+	    	There are a few things that you need to make a network.  Using the internet as an example:
+	    	<ul>
+	    		<li>You need a way to encode and interpret messages.  The internet uses bits.</li>
+				<li>You need a way to route messages.  Internet: Routers figure out next hops.</li>
+				<li>You need rules for deciding who gets to use resources.  Internet uses best effor service.</li>
+			</ul>
+		</div>
+	</div>
+	<div id="stage-4-3">
+		<a name=internet></a>
+	    <h3>Make the internet work for you</h3>
+	    <div class="info">
+	    	<ul>
+				<li><b><u>URL</b></u> - Uniform Resource Locator - this has 3 parts:  http://www.udacity.com/xxxxx/yyyyy - http is the PROTOCOL.  www.udacity.com is the HOST. xxxxx/yyyyy is the PATH.</li>
+				<li><b><u>Query Parameters</b></u> - also called "Get Parameters" - come after the PATH and are separated from the PATH by a "?".  these parameters are separated by a "&".</li>
+				<li><b><u>Fragment</b></u> - a fragment is used to reference a part of the webpage you are looking at.  Fragments come after queries, if present, and are separated by a "#".</li>
+				<li><b><u>Port</b></u> - ex: "http://localhost:8000/", where 8000 is the port.  The default port is 80.</li>
+				<li><b><u>Get</b></u> - this is used to request a document from the server</li>
+				<li><b><u>Post</b></u> - this is used to send data to the server</li>
+			</ul>
+		</div>
+	</div>
+</div>
 
-4.1a: Making a network
-You need a way to encode and interpret messages.  The internet uses bits.
-you need a way to route messages.  Internet: Routers figure out next hops.
-You need rules for deciding who gets to use resources.  Internet uses best effor service.
-
-4.2: Make the internet work for you
-URL - Uniform Resource Locator - this has 3 parts:  http://www.udacity.com/xxxxx/yyyyy - http is the PROTOCOL.  www.udacity.com is the HOST. xxxxx/yyyyy is the PATH.
-Query Parameters - also called "Get Parameters" - come after the PATH and are separated from the PATH by a "?".  these parameters are separated by a "&".
-Fragment - a fragment is used to reference a part of the webpage you are looking at.  Fragments come after queries, if present, and are separated by a "#".
-Port - ex: "http://localhost:8000/", where 8000 is the port.  The default port is 80.
-Get - this is used to request a document from the server
-Post - this is used to send data to the server
+{% endblock %}

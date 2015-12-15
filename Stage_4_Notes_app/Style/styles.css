@@ -25,6 +25,8 @@
   position: relative;
   z-index: 599;
   cursor: default;
+/*  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;*/
 }
 /* secondary Menu */
 #cssmenu ul ul {
@@ -34,10 +36,18 @@
   top: 1px;
   left: 99%;
   z-index: 598;
-  width: 150%;
+  width: 200%;
+  border-radius: 0px;
 }
 #cssmenu ul ul li {
   float: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+}
+#cssmenu ul ul li:hover {
+  float: none;
+  border-radius: 0px;
 }
 #cssmenu ul ul ul {
   top: 1px;
@@ -45,6 +55,7 @@
 }
 #cssmenu ul li:hover > ul {
   visibility: visible;
+  border-radius: 0px;
 }
 #cssmenu ul li {
   float: none;
@@ -69,10 +80,23 @@
 #cssmenu > ul {
   float: none;
 }
-
+#bottom_menu{
+  position: relative;
+  z-index: 599;
+  cursor: default;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 15px;
+}
+#top_menu{
+  position: relative;
+  z-index: 599;
+  cursor: default;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 0px;
+}
 /* Main Menu */
 #cssmenu ul {
-  background: #fff;
+  background: #f7f7f7; /* color of the menu*/
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
@@ -98,7 +122,7 @@
   font-size: 14px;
 }
 #cssmenu ul ul {
-  width: 150px;
+  width: 300px;
   background: none;
   border-left: 20px solid transparent;
 }
